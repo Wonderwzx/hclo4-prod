@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .data-table{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 200px;
+    }
+
+    .solid-border-table {
+      width: auto;
+      margin-top: 30px;
+      border-collapse: collapse; /* Remove default spacing between table cells */
+    }
+
+    .solid-border-table td {
+      border: 1px solid #000; /* Set a single solid black border around each cell */
+      padding: 5px; /* Add some padding for better appearance */
+    }
+
+    .container{
+      display: flex;
+    }
+
+    .box, .description{
+      width: 50%; /* 将子div的宽度设为50%，以平均占据父div的宽度 */
+      box-sizing: border-box; /* 让子div的边框和填充不影响它们的宽度 */
+      float: left; /* 使用float属性来实现左右排列 */
+    }
+
+    .description{
+      margin-left: 100px;
+    }
+
+    .description ul{
+      list-style-type: square;
+    }
+
+    .description li{
+      font-size: 20px;
+      color: grey;
+      padding: 10px;
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: space-between;
+      margin: 25px;
+      font-size: 15px;
+    }
+
+    .prev{
+      text-align: start;
+    }
+
+    .next {
+      text-align: end;
+    }
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="language-switch">
+    <a href="#">中文</a> ｜ <a href="product4-en.html">English</a>
+  </div>
+  <div class="nav-items">
+    <a href="./index.html"><img src="../../img/logo.png" width=122px height=100px></a>
+    <div class="nav">
+      <ul class="nav1">
+        <li><a href="about_us.html">关于我们</a></li>
+        <li>
+          <a href="#">产品中心</a>
+          <ul class="nav2">
+            <li>
+              <a href="#" class="a2">高氯酸</a>
+              <ul class="nav3">
+                <li><a href="product1.html">国标级</a></li>
+                <li><a href="product2.html">精品级</a></li>
+                <li><a href="product3.html">环保级</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="product4.html" class="a2">高氯酸锂</a>
+            </li>
+            <li>
+              <a href="product5.html" class="a2">高氯酸镁</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="contact_us.html">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+<img src="../../img/产品.png" style="margin-top: 10px">
+
+<p style="margin-left: 100px; margin-top: 50px"><a href="./index.html">首页</a>       ->       高氯酸锂</p>
+
+<div class="container">
+  <div class="box">
+    <a href="javascript:;" class="phone-display"></a>
+
+    <div class="bottom-nav clearfix">
+      <div class="tab-btn btn-left">
+        <i class="shift-icon">
+          <span></span>
+        </i>
+      </div>
+      <div class="tab-btn btn-right">
+        <i class="shift-icon">
+          <span></span>
+        </i>
+      </div>
+      <div class="bottom-center-nav">
+        <ul class="small-img-ul">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="description">
+    <div style="margin-top: 0px">
+      <h2 style="text-align: left; margin-top: 0px; color:black">高氯酸锂</h2>
+      <hr>
+      <ul>
+        <li>线性分子式： LiClO₄</li>
+        <li>分子量： 106.39</li>
+        <li>CAS号： 7791-03-9</li>
+        <li>UN号： 1481</li>
+        <li>EINECS登录号： 232-237-2</li>
+        <li>GHS 危险性类别： 氧化性固体，类别2</li>
+        <li>MDL编号： MFCD00011079</li>
+        <li>安全技术说明书下载： 点击下载</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="../../js/liclo4.js"></script>
+
+<div class="data-table">
+  <p>产品详情</p>
+  <hr>
+  <table class="solid-border-table">
+    <tr style="text-align: center">
+      <td>产品名称</td>
+      <td>产品特点</td>
+      <td>检验要求</td>
+      <td>建议用途</td>
+      <td>化验报告</td>
+      <td>规格</td>
+    </tr>
+    <tr>
+      <td>高氯酸锂</td>
+      <td>无水高氯酸锂，含量高于99.9%，经过真空干燥脱水</td>
+      <td>执行企标(Q/XYQHG001-2022)，主要检测含量，水分，及各类离子杂质</td>
+      <td>锂电池原料，电解液原料。</td>
+      <td>下载报告单</td>
+      <td>25kg
+        /
+        125kg</td>
+    </tr>
+  </table>
+</div>
+
+<div class="pagination">
+  <div>  上一个：<a href="product3.html" class="prev">高氯酸环保级</a> </div>
+  <div>  下一个：<a href="product5.html" class="next">高氯酸镁</a> </div>
+</div>
+
+
+<footer>
+  <div class="contact-info">
+    <div class="contact-block">
+      <img src="../../img/footer-phone.png">
+      <p>电话：+86-18622592007 <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp +86-13802034937</p>
+    </div>
+    <div class="contact-block">
+      <img src="../../img/footer-email.png">
+      <p>邮箱：zy@tj-xinyuanchem.com</p>
+    </div>
+    <div class="contact-block">
+      <img src="../../img/footer-address.png">
+      <p>邮箱：zy@tj-xinyuanchem.com</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <br>
+    <p>Copyright @ VillaGrandis All Rights Reserved  ICP备案号000000000号-1    网站地图</p>
+  </div>
+</footer>
+
+</body>
+</html>

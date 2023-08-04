@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./index.css">
+  <style>
+    .container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .option{
+      width: 8%;
+      padding: 10px;
+      margin: 20px;
+      border: 1px solid darkblue;
+      cursor: pointer;
+      transition: background-color 0.3s;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .option:hover {
+      background-color: #007bff;
+      color: #fff;
+    }
+
+    .image {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .description {
+      flex: 1;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+<header>
+  <div class="language-switch">
+    <a href="#">中文</a> ｜ <a href="about_us-en.html">English</a>
+  </div>
+  <div class="nav-items">
+    <a href="./index.html"><img src="../../img/logo.png" width=122px height=100px></a>
+    <div class="nav">
+      <ul class="nav1">
+        <li><a href="about_us.html">关于我们</a></li>
+        <li>
+          <a href="#">产品中心</a>
+          <ul class="nav2">
+            <li>
+              <a href="#" class="a2">高氯酸</a>
+              <ul class="nav3">
+                <li><a href="product1.html">国标级</a></li>
+                <li><a href="product2.html">精品级</a></li>
+                <li><a href="product3.html">环保级</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="product4.html" class="a2">高氯酸锂</a>
+            </li>
+            <li>
+              <a href="product5.html" class="a2">高氯酸镁</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="contact_us.html">联系我们</a></li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+<img src="../../img/aboutus.png">
+<br>
+<p><a href="./index.html">首页</a>       ->       关于我们</p>
+<h2>关于我们</h2>
+
+<div class="container">
+  <span class="option" onmouseover="showInfo(0)">公司简介</span>
+  <span class="option" onmouseover="showInfo(1)">公司优势</span>
+  <span class="option" onmouseover="showInfo(2)">检验设备</span>
+  <span class="option" onmouseover="showInfo(3)">公司资质</span>
+</div>
+
+<div class="container" id="description">
+  <div class="image">
+    <img id="image" src="../../img/公司简介.png" alt="Image">
+  </div>
+  <div class="description">
+    <p id="text">天津市鑫源化工有限公司成立于1995年，专业生产高氯酸和高氯酸盐(高氯酸锂和高氯酸镁)。公司经过近30年的稳步发展，积累了丰富的生产经验。除了生产标准产品，公司还能够根据客户的需求自主研发更高规格的产品，也因此赢得了国内外客户的广泛认可。随着海外市场的拓展，如今天津鑫源化工已经是全球范围内专业的高氯酸生产商和供应商之一。
+      <br>
+      <br>
+      为响应环保政策，公司于2021选址沧州市临港经济开发区，新办生产工厂沧州鑫源泉化工有限公司，工厂占地面积7.9万平方米，高氯酸的年产量可达9900吨。新厂引进现代高科技自动化生产设备和德国耶拿的检测设备。将检测精度提升至ppb级别，化验精度超越中等规模检测机构。目前市场覆盖国内外各地，产品出口至日本韩国印度欧洲非洲中南亚等许多国和地区。</p>
+  </div>
+</div>
+
+<img src="../../img/资质证书.png">
+
+<footer>
+  <div class="contact-info">
+    <div class="contact-block">
+      <img src="../../img/footer-phone.png">
+      <p>电话：+86-18622592007 <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp +86-13802034937</p>
+    </div>
+    <div class="contact-block">
+      <img src="../../img/footer-email.png">
+      <p>邮箱：zy@tj-xinyuanchem.com</p>
+    </div>
+    <div class="contact-block">
+      <img src="../../img/footer-address.png">
+      <p>邮箱：zy@tj-xinyuanchem.com</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <br>
+    <p>Copyright @ VillaGrandis All Rights Reserved  ICP备案号000000000号-1    网站地图</p>
+  </div>
+</footer>
+
+<script>
+  const descriptions = [
+    {
+      imageSrc: '../../img/公司简介.png',
+      text: '天津市鑫源化工有限公司成立于1995年，专业生产高氯酸和高氯酸盐(高氯酸锂和高氯酸镁)。公司经过近30年的稳步发展，积累了丰富的生产经验。除了生产标准产品，公司还能够根据客户的需求自主研发更高规格的产品，也因此赢得了国内外客户的广泛认可。随着海外市场的拓展，如今天津鑫源化工已经是全球范围内专业的高氯酸生产商和供应商之一。\n' +
+        '\n' +
+        '\n' +
+        '为响应环保政策，公司于2021选址沧州市临港经济开发区，新办生产工厂沧州鑫源泉化工有限公司，工厂占地面积7.9万平方米，高氯酸的年产量可达9900吨。新厂引进现代高科技自动化生产设备和德国耶拿的检测设备。将检测精度提升至ppb级别，化验精度超越中等规模检测机构。目前市场覆盖国内外各地，产品出口至日本韩国印度欧洲非洲中南亚等许多国和地区。',
+    },
+    {
+      imageSrc: '../../img/公司优势.png',
+      text: '创立自有生产工厂：创立沧州鑫源泉化工有限公司\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '累积30年生产经验，产品均达出口标准，年产量可达9900吨，工厂引进高科技现代化自动化生产设备和德国耶拿的检测设备，引进了电感耦合等离子体质谱仪，检测精度均为ppb级别，化验精度超越中等规模检测机构。\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '科学管理搭配科技助力实现高质量生产，各类产品参数详细，检验报告单准确权威。',
+    },
+    {
+      imageSrc: '../../img/检测设备.png',
+      text: '公司具备标准化检验流程，拥有德国耶拿的检测设备，电感耦合等离子体质谱仪，检测精度提升至ppb级别，化验精度超越中等规模检测机构。\n' +
+        '\n' +
+        '\n' +
+        '\n' +
+        '实验室检验人员6名，化验室化验员5名，其中两名高级化验员化验经验20年，其余人员均5年以上，经验丰富，业务知识丰富化验水平优。',
+    },
+    {
+      imageSrc: '../../img/公司资质.png',
+      text: '安全生产许可证证书编号：（津）WH 安许证字[2006]XQ0022\n' +
+        '\n' +
+        '工业产品生产许可证证书编号：（冀）XK13-011-00219',
+    },
+  ];
+
+  function showInfo(index) {
+    const descriptionElement = document.getElementById('description');
+    const imageElement = document.getElementById('image');
+    const textElement = document.getElementById('text');
+
+    imageElement.src = descriptions[index].imageSrc;
+    textElement.textContent = descriptions[index].text;
+  }
+</script>
+
+</body>
+</html>

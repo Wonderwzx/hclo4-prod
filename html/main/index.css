@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s; /* 颜色变化动画 */
+}
+
+a:hover {
+  color: cadetblue;
+}
+
+.nav1 {
+  width: 400px;
+  height: 50px;
+  /* border: 1px solid red; */
+  /*margin: 200px auto;*/
+}
+
+.nav1>li {
+  float: left;
+}
+
+.nav1 a {
+  display: block;
+  width: 120px;
+  height: 50px;
+  /*box-sizing: border-box;*/
+  /*color: #333;*/
+  text-align: center;
+  background-color: white;
+}
+
+.nav2 {
+  /* 初始隐藏二级导航 */
+  display: none;
+  /* 相对定位 */
+  position: relative;
+}
+
+.nav1 li:hover .nav2 {
+  display: block;
+}
+
+.nav3 {
+  width: 350px;
+  height: 200px;
+  /* 绝对定位 */
+  position: absolute;
+  left: 100px;
+  top: 0px;
+  /*font: 16px/200px "宋体";*/
+  color: #333;
+  text-align: center;
+  /* 隐藏三级导航 */
+  display: none;
+}
+
+.nav2 li:hover .nav3 {
+  /* 显示三级导航 */
+  display: block;
+}
+
+.nav {
+  position: absolute;
+  top: 50px;
+  right: 10px;
+  font-size: 20px;
+}
+
+.language-switch {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+
+h1, h2{
+  text-align: center;
+  margin-top: 50px;
+  color: dodgerblue;
+}
+
+
+.product {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  /*padding: 10px;*/
+}
+
+.product img {
+  padding: 30px;
+  width: 414px;
+  height: 180px;
+}
+
+footer{
+  margin-top: 200px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+}
+
+
+.contact-info{
+  display: flex;
+  height: 120px;
+  background-color: #29579e;
+  font-size: 20px;
+  color: white;
+}
+
+.contact-block{
+  display: flex;
+  width: 33vw;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.contact-block img{
+  width: 30px;
+  height: 30px;
+  margin-right: 30px;
+}
+
+.copyright {
+  height: 80px;
+  background-color: #285492;
+  text-align: center;
+  color: white;
+}
+

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="./index.css">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    .data-table{
+      margin-left: 20px;
+      margin-right: 20px;
+      margin-top: 200px;
+    }
+
+    .solid-border-table {
+      width: auto;
+      margin-top: 30px;
+      border-collapse: collapse; /* Remove default spacing between table cells */
+    }
+
+    .solid-border-table td {
+      border: 1px solid #000; /* Set a single solid black border around each cell */
+      padding: 5px; /* Add some padding for better appearance */
+    }
+
+    .container{
+      display: flex;
+    }
+
+    .box, .description{
+      width: 50%; /* 将子div的宽度设为50%，以平均占据父div的宽度 */
+      box-sizing: border-box; /* 让子div的边框和填充不影响它们的宽度 */
+      float: left; /* 使用float属性来实现左右排列 */
+    }
+
+    .description{
+      margin-left: 100px;
+    }
+
+    .description ul{
+      list-style-type: square;
+    }
+
+    .description li{
+      font-size: 20px;
+      color: grey;
+      padding: 10px;
+    }
+
+    .pagination {
+      margin: 20px;
+      font-size: 15px;
+      text-align: end;
+    }
+
+
+  </style>
+</head>
+<body>
+<header>
+  <div class="language-switch">
+    <a href="product1.html">中文</a> ｜ <a href="#">English</a>
+  </div>
+  <div class="nav-items">
+    <a href="./index-en.html"><img src="../../img/logo.png" width=122px height=100px></a>
+    <div class="nav">
+      <ul class="nav1">
+        <li><a href="about_us-en.html">About Us</a></li>
+        <li>
+          <a href="#">Products</a>
+          <ul class="nav2">
+            <li>
+              <a href="#" class="a2">Perchloric Acid</a>
+              <ul class="nav3">
+                <li><a href="product1-en.html">National Standard</a></li>
+                <li><a href="product2-en.html">Premium Level</a></li>
+                <li><a href="product3-en.html">Environmental Level</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="product4-en.html" class="a2">Lithium Perchlorate</a>
+            </li>
+            <li>
+              <a href="product5-en.html" class="a2">Magnesium Perchlorate</a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="contact_us-en.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+
+</header>
+
+<img src="../../img/产品.png" style="margin-top: 10px">
+
+<p style="margin-left: 100px; margin-top: 50px"><a href="./index-en.html">Home</a>       ->       Perchloric acid national standard</p>
+
+<div class="container">
+  <div class="box">
+    <a href="javascript:;" class="phone-display"></a>
+
+    <div class="bottom-nav clearfix">
+      <div class="tab-btn btn-left">
+        <i class="shift-icon">
+          <span></span>
+        </i>
+      </div>
+      <div class="tab-btn btn-right">
+        <i class="shift-icon">
+          <span></span>
+        </i>
+      </div>
+      <div class="bottom-center-nav">
+        <ul class="small-img-ul">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="description">
+    <div style="margin-top: 0px">
+      <h2 style="text-align: left; margin-top: 0px; color:black">Perchloric acid national standard</h2>
+      <hr>
+      <ul>
+        <li>Linear Molecular formula： HClO₄</li>
+        <li>Molecular Weight： 100.46</li>
+        <li>CAS NO： 7601-90-3</li>
+        <li>UN number： 1873</li>
+        <li>EINECS login number： 231-512-4</li>
+        <li>GHS Hazard Category： Type 5.1 oxidant</li>
+        <li>MDL number： MFCD00011325</li>
+        <li>Download of safety technical manual： Click to download</li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="../../js/hclo4-national.js"></script>
+
+<div class="data-table">
+  <p>Product Details</p>
+  <hr>
+  <table class="solid-border-table">
+    <tr style="text-align: center">
+      <td>Product name</td>
+      <td>Product Features</td>
+      <td>Inspection Requirements</td>
+      <td>Suggested use</td>
+      <td>Analysis report</td>
+      <td>Specifications</td>
+    </tr>
+    <tr>
+      <td>Industrial grade - Perchloric acid</td>
+      <td>Content 50% -52%, not subjected to closed distillation</td>
+      <td>Implement the enterprise standard (Q/XYQHG001-2022), mainly testing for content.</td>
+      <td>Industrial raw materials</td>
+      <td>Download Report Form</td>
+      <td>500ml/200L</td>
+    </tr>
+    <tr>
+      <td>Analytical pure - Perchloric acid</td>
+      <td>Content 70% -72%, after single closed distillation</td>
+      <td>Implement the analytical purity requirements of the Chinese chemical standard GB/T623-2011, mainly detecting content and residual impurities.</td>
+      <td>Medical items, low-end reagents</td>
+      <td>Download Report Form</td>
+      <td>500ml/200L</td>
+    </tr>
+    <tr>
+      <td>Superior pure Perchloric acid</td>
+      <td>Content 70% -72%, after single closed distillation</td>
+      <td>Implement the requirements of Chinese chemical standard GB/T623-2011 for superior purity, mainly detecting content, residual impurities, and some metal ions.</td>
+      <td>Chemical reagent, high purity Perchlorate</td>
+      <td>Download Report Form</td>
+      <td>500ml/200L</td>
+    </tr>
+  </table>
+</div>
+
+<div class="pagination">
+  Next：<a href="product2-en.html" class="next">High quality perchloric acid</a>
+</div>
+
+
+<footer>
+  <div class="contact-info">
+    <div class="contact-block">
+      <img src="../../img/footer-phone.png">
+      <p>Phone：+86-18622592007 <br>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp +86-13802034937</p>
+    </div>
+    <div class="contact-block">
+      <img src="../../img/footer-email.png">
+      <p>Email：zy@tj-xinyuanchem.com</p>
+    </div>
+    <div class="contact-block">
+      <img src="../../img/footer-address.png">
+      <p>Address：Dahou Village, Wangwenzhuang, Xiqing District, Tianjin, China</p>
+    </div>
+  </div>
+  <div class="copyright">
+    <br>
+    <p>Copyright @ VillaGrandis All Rights Reserved  ICP备案号000000000号-1    网站地图</p>
+  </div>
+</footer>
+
+</body>
+</html>

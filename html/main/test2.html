@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    @keyframes slideUp {
+      0% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+    }
+
+    .container {
+      width: 300px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #ccc;
+      overflow: hidden;
+    }
+
+    .text {
+      font-size: 24px;
+      transition: opacity 0.3s, transform 0.3s;
+    }
+
+    .text:hover {
+      opacity: 0;
+      transform: translateY(-100%);
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="text">Hover me!</div>
+</div>
+</body>
+</html>

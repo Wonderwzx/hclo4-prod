@@ -17,11 +17,58 @@ a:hover {
   color: cadetblue;
 }
 
+ul a::before,
+ul a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  /*top: 25px;*/
+  /*bottom: -2px;*/
+  margin-top: 30px;
+  background-color: cadetblue;
+  transition: width 0.3s, left 0.3s;
+}
+
+
+
+.nav1 a::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav1 a::after {
+  right: 50%;
+  transform: translateX(50%);
+}
+
+/*.nav2 a:hover::before,*/
+/*.nav2 a:hover::after {*/
+/*  width: 50%;*/
+/*}*/
+
+/*.nav2 a::before {*/
+/*  left: 50%;*/
+/*  transform: translateX(-50%);*/
+/*}*/
+
+/*.nav2 a::after {*/
+/*  right: 50%;*/
+/*  transform: translateX(50%);*/
+/*}*/
+
+/*.nav2 a:hover::before,*/
+/*.nav2 a:hover::after {*/
+/*  width: 50%;*/
+/*}*/
+
+
+
+
+
 .nav1 {
   width: 400px;
   height: 50px;
-  /* border: 1px solid red; */
-  /*margin: 200px auto;*/
 }
 
 .nav1>li {
@@ -31,7 +78,7 @@ a:hover {
 .nav1 a {
   display: block;
   width: 120px;
-  height: 50px;
+  height: 40px;
   /*box-sizing: border-box;*/
   /*color: #333;*/
   text-align: center;
@@ -39,11 +86,18 @@ a:hover {
 }
 
 .nav2 {
-  /* 初始隐藏二级导航 */
   display: none;
-  /* 相对定位 */
   position: relative;
 }
+
+.nav2 a {
+  border-bottom: 1px dashed #000;
+}
+
+.nav3 a {
+  border-left: 1px dashed #000;
+}
+
 
 .nav1 li:hover .nav2 {
   display: block;
@@ -57,6 +111,7 @@ a:hover {
   left: 100px;
   top: 0px;
   /*font: 16px/200px "宋体";*/
+  margin-left: 20px;
   color: #333;
   text-align: center;
   /* 隐藏三级导航 */
